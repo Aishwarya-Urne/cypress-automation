@@ -2,7 +2,7 @@
 /// <reference types="Cypress" />  
 
 
-describe('Frame Test', function(){
+describe('Use Fixture file data', function(){
 
     //Before wil run before all it methods
     //ideally all setup related code is written in before block
@@ -20,11 +20,15 @@ describe('Frame Test', function(){
         })
     })
 
-it('test 1st case', function(){
+it('Pulling data from fixture file', function(){
 
     cy.visit('https://rahulshettyacademy.com/angularpractice/')
     cy.get('div[class="form-group"] [name="name"]').type(this.data1.name)
     cy.get('select').select("Female")
+    cy.get(':nth-child(4) > .ng-untouched').should('have.value', this.data1.name)
+    //validate the elements attribute which takes attr name and its value we can also use props() 
+    //method like used in Test7 if we want to use the value in further step
+    cy.get('div[class="form-group"] [name="name"]').should('have.attr', 'minlength', '2')
     
 })
 

@@ -1,9 +1,9 @@
 //to add the auto suggestions on cy method
 /// <reference types="Cypress" />  
 
-describe('My fifth Test Suite', function(){
+describe('My 7th Test Suite', function(){
 
-it('My 5th test case', function(){
+it('My 7th test case', function(){
 
     cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
 

@@ -8,10 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^9.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "cypress": "^10.1.0",
     "cypress-iframe": "^1.0.1"
   }
 }

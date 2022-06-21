@@ -1,7 +1,6 @@
 //to add the auto suggestions on cy method
 /// <reference types="Cypress" />  
-//'./' will go to parent dir then main dir and the select the page
-import HomePage from './pageObjects/HomePage'
+
 
 describe('Use Fixture file data', () => {
 

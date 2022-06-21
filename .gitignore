@@ -158,3 +158,12 @@ build/Release
 node_modules
 cypress/videos
 cypress/screenshots
+
+.DS_Store
+*.log
+node_modules/
+mochawesome-report*/
+_site/
+coverage/
+.nyc_output/
+dist/

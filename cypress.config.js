@@ -17,11 +17,13 @@ module.exports = defineConfig({
   },
 
   //this will tell cypress to run .feature files along with .js files
-  "testFiles" : "**/*.feature",
+ // "testFiles" : "**/*.feature",
+ 
 
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+  
     },
   },
 });
